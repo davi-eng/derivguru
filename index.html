@@ -295,27 +295,30 @@
             <h2>Current Market News</h2>
             <p>Stay updated with the latest market trends and news...</p>
         </section>
+        <script>
+            async function fetchCourses() {
+                const response = await fetch('https://api.fxstreet.com/news');
+                const courses = await response.json();
+                const coursesContainer = document.getElementById('courses');
+                courses.forEach(course => {
+                    const div = document.createElement('div');
+                    div.innerHTML = `<h3>${course.title}</h3><p>${course.description}</p>`;
+                    coursesContainer.appendChild(div);
+                });
+            }
+            fetchCourses();
+        </script>
+    </body>
+    </html>
+    
     <section id="classes" class="section">
         <h2>Trading Classes</h2>
         <p>Learn from experienced traders through our comprehensive courses...</p>
         <div id="courses"></div>
     </section>
-    <script>
-        async function fetchCourses() {
-            const response = await fetch('https://api.fxstreet.com/news');
-            const courses = await response.json();
-            const coursesContainer = document.getElementById('courses');
-            courses.forEach(course => {
-                const div = document.createElement('div');
-                div.innerHTML = `<h3>${course.title}</h3><p>${course.description}</p>`;
-                coursesContainer.appendChild(div);
-            });
-        }
-        fetchCourses();
-    </script>
-</body>
-</html>
-
+    <section id="pdf" class="section"> <h2>PDF Learning Material</h2> <embed src="file:///C:/Users/Administrator/Desktop/deriv%20trade%20resources/strategies/even%20odd/FULL%20MARGIN%20EVEN%20ODD%20STRATEGY%20(1).pdf" type="application/pdf" width="100%" height="600px" />
+     </section> <section id="images" class="section"> <h2>Image Learning Material</h2> <img src="path/to/your/image1.jpg" alt="Description of Image 1" width="80%" /> <img src="path/to/your/image2.jpg" alt="Description of Image 2" width="80%" /> </section>
+    
 
         <section id="contact" class="section">
             <h2>Contact Us</h2>
