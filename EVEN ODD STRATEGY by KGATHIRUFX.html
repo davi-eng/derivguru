@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .strategy-container {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .strategy-title {
+            color: #2c3e50;
+            text-align: center;
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+        }
+        .strategy-section {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            background: #f8f9fa;
+        }
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+        .checklist li {
+            padding: 8px 0 8px 30px;
+            position: relative;
+        }
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .entry-point {
+            background: #e8f6f3;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .contact {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .even-strategy {
+            border-top: 4px solid #2ecc71;
+        }
+        .odd-strategy {
+            border-top: 4px solid #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="strategy-title">EVEN ODD TRADING STRATEGY</h1>
+    <p style="text-align: center">by KGATHIRUFX</p>
+
+    <div class="strategy-container even-strategy">
+        <h2 style="color: #27ae60">EVEN MARKET STRATEGY</h2>
+        
+        <div class="strategy-section">
+            <h3>Prerequisites:</h3>
+            <ul class="checklist">
+                <li>GREEN BAR must be on Even Market</li>
+                <li>Digit with green bar should be 12.1% or higher</li>
+                <li>Minimum three even numbers should have 10% or above</li>
+                <li>RED BAR should be on Even market</li>
+            </ul>
+        </div>
+
+        <div class="entry-point">
+            <h3>Manual Trading Entry Point</h3>
+            <p>1. Wait for cursor to hit EVEN digit (>10%)</p>
+            <p>2. When cursor enters digit with GREEN BAR</p>
+            <p>3. As digit increases, click EVEN</p>
+        </div>
+
+        <div class="entry-point">
+            <h3>Bot Trading Entry Point</h3>
+            <p>1. Wait for cursor to hit two ODD numbers</p>
+            <p>2. Wait for hit on digit with green bar (EVEN)</p>
+            <p>3. RUN your BOT</p>
+        </div>
+    </div>
+
+    <div class="strategy-container odd-strategy">
+        <h2 style="color: #c0392b">ODD MARKET STRATEGY</h2>
+        
+        <div class="strategy-section">
+            <h3>Prerequisites:</h3>
+            <ul class="checklist">
+                <li>GREEN BAR must be on Odd Market</li>
+                <li>Digit with red bar should be 12.1% or higher</li>
+                <li>Minimum three red numbers should have 10% or above</li>
+                <li>RED BAR should be on Odd market</li>
+            </ul>
+        </div>
+
+        <div class="entry-point">
+            <h3>Manual Trading Entry Point</h3>
+            <p>1. Wait for cursor to hit ODD digit (>10%)</p>
+            <p>2. When cursor enters digit with GREEN BAR</p>
+            <p>3. As digit increases, click ODD</p>
+        </div>
+
+        <div class="entry-point">
+            <h3>Bot Trading Entry Point</h3>
+            <p>1. Wait for cursor to hit two EVEN numbers</p>
+            <p>2. Wait for hit on digit with green bar (EVEN)</p>
+            <p>3. RUN your BOT</p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h3>For Inquiries</h3>
+        <p>Contact: 0704636093 KGATHIRUFX</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f0f2f5;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: #1a237e;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .strategy-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .strategy-title {
+            color: #1a237e;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .conditions {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .entry-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .entry-point {
+            background: #e8eaf6;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .entry-point h4 {
+            color: #1a237e;
+            margin-top: 0;
+        }
+        .alert {
+            background: #ffebee;
+            border-left: 4px solid #ef5350;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        .requirement {
+            padding: 5px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        .requirement:before {
+            content: "•";
+            color: #1a237e;
+            font-size: 20px;
+            position: absolute;
+            left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>OVER UNDER MARKET STRATEGY</h1>
+        <h2>by KGATHIRUFX</h2>
+    </div>
+
+    <div class="strategy-card">
+        <h2 class="strategy-title">UNDER 9</h2>
+        <div class="conditions">
+            <div class="requirement">Green bar must be at odd digits below digit 9</div>
+            <div class="requirement">Red bar must be at odd digits below digit 9</div>
+            <div class="requirement">Digit 9 must have percentage less than 10%</div>
+        </div>
+        <div class="entry-points">
+            <div class="entry-point">
+                <h4>Manual Entry</h4>
+                <p>Wait for cursor to hit digit 9 and when percentage doesn't increase, click UNDER</p>
+            </div>
+            <div class="entry-point">
+                <h4>Bot Entry</h4>
+                <p>Wait for cursor to hit digit 9 and when percentage doesn't increase, RUN bot</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="strategy-card">
+        <h2 class="strategy-title">UNDER 8</h2>
+        <div class="conditions">
+            <div class="requirement">Green bar must be at even digits below digit 8</div>
+            <div class="requirement">Red bar must be at even digits below digit 8</div>
+            <div class="requirement">Digits 8 and 9 must have percentage less than 10%</div>
+        </div>
+        <div class="entry-points">
+            <div class="entry-point">
+                <h4>Manual Entry</h4>
+                <p>Wait for cursor to hit digit 8 and when percentage doesn't increase, click UNDER</p>
+            </div>
+            <div class="entry-point">
+                <h4>Bot Entry</h4>
+                <p>Wait for cursor to hit digit 8 and when percentage doesn't increase, RUN bot</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="strategy-card">
+        <h2 class="strategy-title">UNDER 7</h2>
+        <div class="conditions">
+            <div class="requirement">Green bar must be at odd digits below digit 7</div>
+            <div class="requirement">Red bar must be at odd digits below digit 7</div>
+            <div class="requirement">Digits 7, 8, and 9 must have percentage less than 10%</div>
+        </div>
+        <div class="entry-points">
+            <div class="entry-point">
+                <h4>Manual Entry</h4>
+                <p>Wait for cursor to hit digit 9 and when percentage doesn't increase, click UNDER</p>
+            </div>
+            <div class="entry-point">
+                <h4>Bot Entry</h4>
+                <p>Wait for cursor to hit digit 9 and when percentage doesn't increase, RUN bot</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="strategy-card">
+        <h2 class="strategy-title">UNDER 6</h2>
+        <div class="conditions">
+            <div class="requirement">Green bar must be at even digits below digit 8</div>
+            <div class="requirement">Red bar must be at even digits below digit 8</div>
+            <div class="requirement">Digits 6, 7, 8, and 9 must have percentage less than 10%</div>
+        </div>
+        <div class="entry-points">
+            <div class="entry-point">
+                <h4>Manual Entry</h4>
+                <p>Wait for cursor to hit digit 8 and when percentage doesn't increase, click UNDER</p>
+            </div>
+            <div class="entry-point">
+                <h4>Bot Entry</h4>
+                <p>Wait for cursor to hit digit 8 and when percentage doesn't increase, RUN bot</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="strategy-card">
+        <h2 class="strategy-title">UNDER 5</h2>
+        <div class="conditions">
+            <div class="requirement">Green bar must be at odd digits below digit 5</div>
+            <div class="requirement">Red bar must be at odd digits below digit 5</div>
+            <div class="requirement">Digits under 5 must have stronger percentages to attract cursor</div>
+        </div>
+        <div class="entry-points">
+            <div class="entry-point">
+                <h4>Manual Entry</h4>
+                <p>Wait for cursor to hit digit 7 or 9 and when percentage doesn't increase, click UNDER</p>
+            </div>
+            <div class="entry-point">
+                <h4>Bot Entry</h4>
+                <p>Wait for cursor to hit digit 7 or 9 and when percentage doesn't increase, RUN bot</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="strategy-card">
+        <h2 class="strategy-title">UNDER 4</h2>
+        <div class="conditions">
+            <div class="requirement">Green bar must be at even digits below digit 4</div>
+            <div class="requirement">Red bar must be at even digits below digit 4</div>
+            <div class="requirement">Digits under 4 must have stronger percentages to attract cursor</div>
+        </div>
+        <div class="entry-points">
+            <div class="entry-point">
+                <h4>Manual Entry</h4>
+                <p>Wait for cursor to hit digit 6 or 8 and when percentage doesn't increase, click UNDER</p>
+            </div>
+            <div class="entry-point">
+                <h4>Bot Entry</h4>
+                <p>Wait for cursor to hit digit 6 or 8 and when percentage doesn't increase, RUN bot</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="strategy-card">
+        <h2 class="strategy-title">UNDER 3</h2>
+        <div class="conditions">
+            <div class="requirement">Green bar must be at odd digits below digit 1</div>
+            <div class="requirement">Red bar must be at odd digits above digit 3</div>
+            <div class="requirement">Digits under 5 must have stronger percentages to attract cursor</div>
+        </div>
+        <div class="entry-points">
+            <div class="entry-point">
+                <h4>Manual Entry</h4>
+                <p>Wait for cursor to hit the digit with red bar and when percentage doesn't increase, click UNDER</p>
+            </div>
+            <div class="entry-point">
+                <h4>Bot Entry</h4>
+                <p>Wait for cursor to hit digit 7 or 9 and when percentage doesn't increase, RUN bot</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert">
+        <h3>⚠️ ALERT</h3>
+        <p>For the UNDER 2 and UNDER 1 market, entry points are not available at the moment. They will be available soon.</p>
+    </div>
+</body>
+</html>
