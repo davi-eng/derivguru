@@ -337,33 +337,76 @@
                 <p>Learn from experienced traders through our comprehensive courses...</p>
                 <div id="courses"></div>
             </section>
-            <section id="pdf" class="section"> 
+            
+            <section id="pdf" class="section">
                 <h2>PDF Learning Material</h2>
-                <p>Binary Options</p> 
+                <p>Binary Options</p>
+                <p>Exclusive Even Odd Strategy</p>
                 <div class="pdf-container">
-                    <p>Exclusive Even Odd Strategy</p>
-                    <embed src="pdfs/even odd/FULL MARGIN EVEN ODD STRATEGY (1).pdf" type="application/pdf" width="100%" height="600px" />
-                </div>
-                <div class="pdf-container"> 
-                    <embed src="pdfs/even odd/MKOREAN WWN EVEN ODD STRATEGY (1)-2.pdf" type="application/pdf" width="100%" height="600px" />
+                    <iframe src="pdfs/even odd/FULL MARGIN EVEN ODD STRATEGY (1).pdf" class="pdf-frame" title="Full Margin Even Odd Strategy"></iframe>
                 </div>
                 <div class="pdf-container">
-                    <embed src="pdfs/even odd/ANOTHER_STRATEGY.pdf" type="application/pdf" width="100%" height="600px" />
+                    <iframe src="pdfs/even odd/MKOREAN WWN EVEN ODD STRATEGY (1)-2.pdf" class="pdf-frame" title="MKorean WWN Even Odd Strategy"></iframe>
+                </div>
+                <div class="pdf-container">
+                    <iframe src="pdfs/even odd/ANOTHER_STRATEGY.pdf" class="pdf-frame" title="Another Strategy"></iframe>
                 </div>
             </section>
+            
+            <style>
+            .section {
+                padding: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .pdf-container {
+                position: relative;
+                width: 100%;
+                margin: 20px 0;
+                padding-top: 129.4%; /* 4:3 Aspect Ratio */
+            }
+            
+            .pdf-frame {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            
+            @media screen and (max-width: 768px) {
+                .pdf-container {
+                    padding-top: 140%; /* Slightly taller aspect ratio for mobile */
+                }
+            }
+            
+            /* Fallback message for browsers that don't support PDF embedding */
+            .pdf-frame::before {
+                content: "PDF cannot be displayed. Please download to view.";
+                display: none;
+            }
+            
+            .pdf-frame:not([src]) + .pdf-frame::before {
+                display: block;
+            }
+            </style>
+
             <section id="images" class="section"> 
                 <h2>Image Learning Material</h2>
                 <div class="img-container">
-                    <img src="images/over2.jpg" alt="over 2 Strategy" width="80%" />
+                    <img src="images/over2.jpeg" alt="over 2 Strategy" width="80%" />
                 </div>
                 <div class="img-container">
-                    <img src="images/over3.jpg" alt="over 3 Strategy " width="80%" />
+                    <img src="images/over3.jpeg" alt="over 3 Strategy " width="80%" />
                 </div>
                 <div class="img-container">
-                    <img src="images/over4.jpg" alt="over 4 Strategy" width="80%" />
+                    <img src="images/over4.jpeg" alt="over 4 Strategy" width="80%" />
                 </div>
                 <div class="img-container">
-                    <img src="images/under5.jpg" alt="under 5 Strategy" width="80%" />
+                    <img src="images/under5.jpeg" alt="under 5 Strategy" width="80%" />
                 </div>
             </section>
             <section id="contact" class="section">
